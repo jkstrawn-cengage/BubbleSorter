@@ -42,21 +42,23 @@ public class BubbleSorterTest {
 		assertEquals(arraySorted, array);
 	}
 	
-	/*
 	//STRING
 
 	@Test
 	public void sort_two_strings() {
 		List<String> array = 		Arrays.asList("2", "1");
 		List<String> arraySorted = 	Arrays.asList("1", "2");
-		assertEquals(arraySorted, bubble.sortStrings(arraySorted));
+		StringBubbleSorter bubble = new StringBubbleSorter(array);
+		bubble.sort();
+		assertEquals(arraySorted, array);
 	}
 	
 	@Test
 	public void sort_three_out_of_order_strings() {
 		List<String> array = 		Arrays.asList("33", "22", "11");
 		List<String> arraySorted = Arrays.asList("11", "22", "33");
-		assertEquals(arraySorted, bubble.sortStrings(array));
+		StringBubbleSorter bubble = new StringBubbleSorter(array);
+		bubble.sort();
+		assertEquals(arraySorted, array);
 	}
-*/
 }
